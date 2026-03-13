@@ -1,0 +1,12 @@
+﻿System.Console.WriteLine("Tips calculate");
+System.Console.Write("Enter sum of your bill: ");
+double bill = Convert.ToDouble(Console.ReadLine());
+System.Console.Write("Enter % of your tips: ");
+double tipPercent = Convert.ToDouble(Console.ReadLine());
+double tipAmount = bill * (tipPercent / 100);
+double totalAmount = bill + tipAmount;
+System.Console.WriteLine("\nResult: ");
+System.Console.WriteLine($"Сумма счета {bill}:");
+System.Console.WriteLine($"Чаевые: {tipAmount}");
+System.Console.WriteLine($"к оплате: {totalAmount}");
+System.Console.WriteLine("bye");
